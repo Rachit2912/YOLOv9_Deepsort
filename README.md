@@ -79,7 +79,7 @@ Here are some example outputs:
 ### Image Results:
 [Click Here](https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/22606/images/1446e76-f181-6047-4e73-8d8ba3c6a50e_object_detection_1.webp)
 ### Video Results:
-[Click Here]()
+[Click Here](https://www.youtube.com/watch?v=chzq2E75M84)
 
 The model was able to successfully track multiple objects, maintaining unique IDs for each object and re-assigning them after temporary occlusions.
 
