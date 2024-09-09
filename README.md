@@ -2,6 +2,8 @@
 
 This repository contains a project combining **YOLOv9** for object detection and **DeepSORT** for object tracking. The system detects objects in real-time and assigns unique IDs to each detected object, ensuring accurate tracking across frames.
 
+## For easy and interactive use, I have made this all in one Google Colab Notebook : [Notebook Link](https://colab.research.google.com/drive/1lp3bGxLWAq26XZmoKZW6vvNaZyXrZIKf?usp=sharing) : Just follow & understand the procedure.
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Installation](#installation)
@@ -44,14 +46,14 @@ pip install -r requirements.txt -q
 To run the detection and tracking on a static image, use the following command:
 
 ```bash
-python detect_dual_tracking.py --source path/to/image.jpg --weights path/to/yolov9-weights.pt --device cpu 
+python detect_dual.py --source path/to/image.jpg --weights yolov9-c.pt --device cpu 
 ```
 
 ### Running on Videos:
 To run detection and tracking on a video file:
 
 ```bash
-python detect_dual_tracking.py --source path/to/video.mp4 --weights path/to/yolov9-weights.pt --device cpu 
+python detect_dual_tracking.py --source path/to/video.mp4 --weights yolov9-c.pt --device cpu 
 ```
 
 #### Options:
@@ -71,12 +73,13 @@ python train.py --data path/to/data.yaml --cfg path/to/yolov9.cfg --weights yolo
 This project uses DeepSORT (Deep Simple Online and Realtime Tracking) to track objects after they have been detected. DeepSORT improves upon the original SORT algorithm by using deep learning to model the appearance of objects, making it more robust to occlusions and re-entry of objects into the frame.
 
 ### Results
-Here are some example outputs:
+Check the runs/detect/  directory for latest results of image and video detection and tracking.
 
-Image Results:
+Here are some example outputs:
+### Image Results:
 [Click Here](https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/22606/images/1446e76-f181-6047-4e73-8d8ba3c6a50e_object_detection_1.webp)
-Video Results:
-[Insert GIF or video here]()
+### Video Results:
+[Click Here]()
 
 The model was able to successfully track multiple objects, maintaining unique IDs for each object and re-assigning them after temporary occlusions.
 
