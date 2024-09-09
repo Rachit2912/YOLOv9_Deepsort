@@ -67,10 +67,10 @@ Run the training script:
 python train.py --data path/to/data.yaml --cfg path/to/yolov9.cfg --weights yolov9.pt --device cpu 
 ```
 
-Tracking Algorithm
+### Tracking Algorithm
 This project uses DeepSORT (Deep Simple Online and Realtime Tracking) to track objects after they have been detected. DeepSORT improves upon the original SORT algorithm by using deep learning to model the appearance of objects, making it more robust to occlusions and re-entry of objects into the frame.
 
-Results
+### Results
 Here are some example outputs:
 
 Image Results:
