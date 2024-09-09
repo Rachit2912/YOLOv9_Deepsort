@@ -83,6 +83,6 @@ Here are some example outputs:
 
 The model was able to successfully track multiple objects, maintaining unique IDs for each object and re-assigning them after temporary occlusions.
 
-Contributing
+### Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
